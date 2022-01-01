@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     <title>Triggergo | main </title>
 </head>
 <body>
@@ -17,7 +18,7 @@
       <ul>
         <li class="menu-website">
           웹사이트 관리
-          <ul>
+          <ul class="sub-menu">
             <li><a href="#">메인 상품 관리</a></li>
             <li><a href="#">메인 상품 등록</a></li>
             <li><a href="#">중간 상품 관리</a></li>
@@ -26,7 +27,7 @@
         </li>
         <li class="menu-items">
           상품 관리
-          <ul>
+          <ul lass="sub-menu">
             <li><a href="#">목록 만들기</a></li>
             <li><a href="#">상품 등록</a></li>
             <li><a href="#">상품 리스트</a></li>
@@ -34,15 +35,151 @@
           </ul>
         </li>
       </ul>
-      <p>로그아웃</p>
+      <p class="logout"><a href ="#">로그아웃</a></p>
     </nav>
   </header>
   <!-- 메인 -->
   <main>
+    <h1 class="sr-only"></h1>
 
+    <section class="slide"> 
+        <div class="slide-container"> 
+            <div class="main-image"></div>
+            <div class="main-image"></div>
+            <div class="main-image"></div>
+            <div class="main-image"></div>
+            <div class="main-image"></div>  
+        </div>
+        <div class="slide-control">
+          <label for="slide-1" class="radio one"></label>
+          <input class="control" type="radio" name="slide" id="Slide1">
+          <label for="slide-2" class="radio two"></label>
+          <input class="control" type="radio" name="slide" id="Slide2">
+          <label for="slide-3" class="radio three"></label>
+          <input class="control" type="radio" name="slide" id="Slide3">
+          <label for="slide-4" class="radio four"></label>
+          <input class="control" type="radio" name="slide" id="Slide4">
+          <label for="slide-5" class="radio five"></label>
+          <input class="control" type="radio" name="slide" id="Slide5"> 
+        </div>
+    </section>
+    <section class="category-container one">
+      <div class="title-wrapper">
+        <h2 class="category-title">새로 나온 투자 상품</h2> 
+        <p class="more">더보기</p>
+      </div>
+      <article>
+        <div class="content-window">
+          <div class="content-wrapper">
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="category-container two">
+      <div class="title-wrapper">
+        <h2 class="category-title">트리거고 추천</h2> 
+        <p class="more">더보기</p>
+      </div>
+      <article>
+        <div class="content-window">
+          <div class="content-wrapper">
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="category-container two">
+      <div class="title-wrapper">
+        <h2 class="category-title">추천 상품</h2> 
+        <p class="more">더보기</p>
+      </div>
+      <article>
+        <div class="content-window">
+          <div class="content-wrapper">
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+            <div class="image-card">
+              <img src="../img/img-house.png" alt="더미이미지">
+              <p>상품명</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
   <footer>
-
+    <ul>
+      <li><a><img src="../img/icon-instagram.svg" alt=""></a></li>
+      <li><a><img src="../img/icon-instagram.svg" alt=""></a></li> 
+    </ul>
+    <p>Trigger Go  |  대표이사 이인석 | 고객센터 031-1234-1234<br> 
+      (평일 9:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무) 
+      사업자등록번호 111-11-11111 | 경기도 성남시 분당구 야탑로 111 | 전자우편주소 : triggergo@naver.com</p>
   </footer>
 </body>
 </html>

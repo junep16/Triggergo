@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 120px;
+  padding: 0 10%;
+  background: #ebebeb;
+}
+footer p { 
+  font-size: 14px;
+  line-height: 1.5;
+}
+footer ul {
+  display: flex;
+}
+footer ul li a img { 
+  width: 40px;
+  height: 40px;
+  margin: 0 5px 5px 5px;
+}

@@ -1,10 +1,8 @@
-
-
 .header{
   display: flex;
   flex-direction: row; 
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100vw;
   height: 80px;
   background: #4A4A4A;
@@ -18,24 +16,24 @@
 } 
 .header ul {  
  display: flex;
- justify-content: center;
+ justify-content: space-evenly;
  align-items: center; 
- width: 500px;
+ width: 50%;
 }
 .header>ul>li { 
   position: relative;
   display: inline-block;
 }
 .header>ul>li>ul {
-  position: absolute;
+  position: absolute; 
   top: 50px;
-  left: -30px;
+  left: -30px; 
   width: 150px;
   display: inline-block;
   background: #E4E4E4; 
   text-align: center;
-}
-.header>ul>li>ul>li {
+} 
+.header>ul>li>ul>li { 
   margin: 10px 0;
   }
 .header>ul>li>ul>li>a {
@@ -43,3 +41,9 @@ text-decoration: none;
 color: #4A4A4A;
 font-size: 14px;
 }
+ 
+.header .logout a {
+text-decoration: none; 
+color: #FFF; 
+}
+ 
