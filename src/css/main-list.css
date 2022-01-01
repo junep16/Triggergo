@@ -21,7 +21,12 @@
 }
 .info-container .info-wrap   { 
     display: flex; 
+    align-items: center;
     margin: 10px 0;
+}
+.info-container .info-wrap .check-label  { 
+    margin-top: 4px;
+    margin-left: 5px;
 }
 .info-container label {
     display: inline-block; 
@@ -39,12 +44,13 @@
     text-align: center;
     background: #ebebeb; 
     border-radius: 5px;
+    cursor: pointer;
     
 }
 .info-container .image-button {
     display: none;
 }
-.info-container .radio {
+.info-container .check {
     width: 20px;
     height: 20px;
 }
@@ -82,6 +88,8 @@
 }
 
 .item-list table thead { 
+    position: sticky;
+    top: 0;
     background-color: #ebebeb; 
 }
 .item-list table thead th {  

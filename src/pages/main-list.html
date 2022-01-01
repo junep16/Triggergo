@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/main-list.css">
     <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/modal.css">
+    <link rel="stylesheet" href="/src/css/edit-item.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <title>Triggergo | main </title>
 </head>
@@ -41,12 +43,12 @@
   <!-- 메인 -->
   <main>
     <section class="main-item-container">
-        <h1>메인 상품 리스트</h1>
+        <h1>메인 상품 등록</h1>
         <form>
             <img src="../img/img-house.png" alt="더미 이미지">
             <div class="info-container">
                 <div class="info-wrap">
-                    <label class="image" id="image" for="image">이미지 선택</label>
+                    <label class="image" for="image">이미지 선택</label>
                     <input class="image-button" name="image" type="file" id="image">
                 </div>
 
@@ -61,8 +63,8 @@
                 </div>
 
                 <div class="info-wrap">
-                    <input class="radio" type="radio" name ="radio">
-                    <label for="radio">키워드 사용 안함</label>
+                    <input class="check" type="checkbox" name ="check">
+                    <label class="check-label" for="check">키워드 사용 안함</label>
                 </div>
                 <button>등록하기</button>
             </div>
@@ -156,6 +158,49 @@
         </article>
     </section>
   </main>
+  <!-- 상품 수정 -->
+  <div class="edit-item">
+    <div class="edit-wrapper"> 
+        <form class="edit-content">
+            <!-- 메인 상품 등록 form과 스타일 동일 --> 
+            <div>
+                <p>상품 내용 수정</p>
+                <img src="../img/img-house.png" alt="더미 이미지"> 
+            </di>
+            <div class="edit-container">
+                <div class="edit-wrap">
+                    <label class="image" for="image">이미지 선택</label>
+                    <input class="image-button" name="image" type="file" id="image">
+                </div>
+    
+                <div class="edit-wrap">
+                    <label for="">상품명</label>
+                    <input type="text" placeholder="상품명 입력">
+                </div>
+    
+                <div class="edit-wrap">
+                    <label for="">키워드</label>
+                    <input type="text" placeholder="키워드 입력">
+                </div>
+    
+                <div class="edit-wrap">
+                    <input class="check" type="checkbox" name ="check">
+                    <label class="check-label" for="check">키워드 사용 안함</label>
+                </div>
+                <button>수정하기</button>
+            </div>
+        </form>
+    </div>
+  </div>
+
+  <!-- 모달창 (css에서  display:none 제거 필요)-->
+  <div class="modal">
+    <div class="modal-content">
+      <p>등록되었습니다</p>
+      <button class="modal-button"
+        type="button">확인</button> 
+    </div>
+  </div>
   <footer>
     <ul>
       <li><a><img src="../img/icon-instagram.svg" alt="인스타그램"></a></li>

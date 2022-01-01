@@ -24,6 +24,9 @@
   position: relative;
   display: inline-block;
 }
+.header>ul>li:hover { 
+  color:#C8F1EE;
+}
 .header>ul>li>ul {
   position: absolute; 
   top: 50px;
