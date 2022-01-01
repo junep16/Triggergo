@@ -34,6 +34,7 @@
   text-align: center;
 } 
 .header>ul>li>ul>li { 
+  display: none;
   margin: 10px 0;
   }
 .header>ul>li>ul>li>a {
