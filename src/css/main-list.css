@@ -104,7 +104,10 @@
   width: 15%;
 }
 .item-list table thead th:nth-child(5) {
-  width: 40%; 
+  width: 30%; 
+}
+.item-list table thead th:nth-child(6) {
+  width: 10%; 
 }
 .item-list table .table-window { 
   height: 500px;

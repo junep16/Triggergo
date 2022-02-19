@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/main-list.css">
+    <link rel="stylesheet" href="/src/css/main-edit.css">
     <link rel="stylesheet" href="/src/css/navigation.css">
     <link rel="stylesheet" href="/src/css/modal.css">
     <link rel="stylesheet" href="/src/css/edit-item.css">
@@ -43,111 +44,65 @@
   <!-- 메인 -->
   <main>
     <section class="main-item-container">
-      <h1>메인 상품 등록</h1>
-      <form>
-        <img src="../img/img-house.png" alt="더미 이미지">
-          <div class="info-container">
-            <div class="info-wrap">
-              <label class="image" for="image">이미지 선택</label>
-              <input class="image-button" name="image" type="file" id="image">
-            </div>
-              <div class="info-wrap">
-                <label for="">상품명</label>
-                <input type="text" placeholder="상품명 입력">
-            </div>
-              <div class="info-wrap">
-              <label for="">키워드</label>
-              <input type="text" placeholder="키워드 입력">
-            </div>
-              <div class="info-wrap">
-                <input class="check" type="checkbox" name ="check">
-                <label class="check-label" for="check">키워드 사용 안함</label>
-              </div>
-              <button type="button">등록하기</button>
-            </div>
-        </form>
-        <article class="item-list">
-            <p>메인 상품 리스트</p>
+      <article class="item-list">
+          <h1>메인 상품 메인 페이지 등록</h1> 
             <div class="table-window">
               <table>
                 <thead>
-                  <th>번호</th>
+                  <th>선택</th>
                   <th>이미지</th>
                   <th>상품명</th>
                   <th>키워드</th>
                   <th></th> 
+                  <th></th> 
                 </thead> 
                 <tbody>
                   <tr>
-                      <td>1</td>
+                      <td>
+                        <input type="checkbox">
+                      </td>
                       <td><img src="../img/img-house.png" alt=""></td>
                       <td>대야미</td>
                       <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
+                      <td>
+                        <select name="keyword" id="keyword">
+                          <option value=" ">키워드 사용여부</option>
+                          <option value="사용">사용</option>
+                          <option value="미사용">미사용</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="order" id="order">
+                          <option value=" ">노출 순서</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </td>
                   </tr>
                   <tr>
-                      <td>2</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>3</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>4</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>5</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>6</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>7</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>8</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>9</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
-                  <tr>
-                      <td>10</td>
-                      <td><img src="../img/img-house.png" alt=""></td>
-                      <td>대야미</td>
-                      <td>트리거고 추천상품</td>
-                      <td><button type="button">수정</button></td>
-                  </tr>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td><img src="../img/img-house.png" alt=""></td>
+                    <td>대야미</td>
+                    <td>트리거고 추천상품</td>
+                    <td>
+                      <select name="keyword" id="keyword">
+                        <option value=" ">키워드 사용여부</option>
+                        <option value="사용">사용</option>
+                        <option value="미사용">미사용</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="order" id="order">
+                        <option value=" ">노출 순서</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </td>
+                </tr>
                 </tbody> 
               </table>
             </div>
@@ -162,42 +117,10 @@
             </nav>
         </article>
     </section>
+    <button class="button-submit" type="button">등록하기</button>
   </main>
-  <!-- 상품 수정 -->
-  <div class="edit-item">
-    <div class="edit-wrapper"> 
-      <form class="edit-content">
-        <!-- 메인 상품 등록 form과 스타일 동일 --> 
-        <div>
-          <p>상품 내용 수정</p>
-          <img src="../img/img-house.png" alt="더미 이미지"> 
-        </div>
-        <div class="edit-container">
-          <div class="edit-wrap">
-            <label class="image" for="image">이미지 선택</label>
-            <input class="image-button" name="image" type="file" id="image">
-          </div>
-          <div class="edit-wrap">
-            <label for="">상품명</label>
-            <input type="text" placeholder="상품명 입력">
-          </div>
-    
-          <div class="edit-wrap">
-            <label for="">키워드</label>
-            <input type="text" placeholder="키워드 입력">
-          </div>
-    
-          <div class="edit-wrap">
-            <input class="check" type="checkbox" name ="check">
-            <label class="check-label" for="check">키워드 사용 안함</label>
-          </div>
-          <button>수정하기</button>
-        </div>
-      </form>
-    </div>
   </div>
-
-  <!-- 모달창 (css에서  display:none 제거 필요)-->
+  <!-- 모달창 (modal.css에서  display:none 제거 필요)-->
   <div class="modal">
     <div class="modal-content">
       <p>등록되었습니다</p>
