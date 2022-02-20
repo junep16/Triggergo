@@ -1,0 +1,14 @@
+.sub-item-add-container {
+  display: flex;
+}
+
+.sub-item-add-container 
+.sub-category-container {
+  width: 50%;
+}
+.sub-item-add-container 
+.sub-category-container ul {
+  width: 50%; 
+  border: 1px solid #d8d8d8;
+  list-style: none;
+}

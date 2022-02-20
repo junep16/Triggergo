@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/main-list.css">
+    <link rel="stylesheet" href="/src/css/sub-list.css">
     <link rel="stylesheet" href="/src/css/main-edit.css">
     <link rel="stylesheet" href="/src/css/navigation.css">
     <link rel="stylesheet" href="/src/css/modal.css">
     <link rel="stylesheet" href="/src/css/edit-item.css">
     <link rel="stylesheet" href="/src/css/footer.css">
-    <title>Triggergo | main </title>
+    <title>Triggergo | sub </title>
 </head>
 <body>
 <!-- 상단 헤더부 (네브바) -->
@@ -44,12 +45,35 @@
   <!-- 메인 -->
   <main>
     <section class="main-item-container">
-      <article class="">
-        <section>
+      <article class="sub-item-add-container">
+        <section class="sub-category-container">
           <h1>카테고리 추가 및 수정</h1>
+          <label for="category-name"></label>
+          <input type="text" name="category-name" id="">
+          <button type="button">목록에추가</button>
+          <ul>
+            <li>트리거고 추천 상품</li>
+            <li>새로 나온 투자</li> 
+          </ul>
+          <label for="category-name-edit"></label>
+          <input type="text" name="category-name-edit" id="">
+          <button type="button">수정</button>
+          <button type="button">삭제</button>
         </section>
         <section>
           <h1>중간상품 등록</h1>
+          <select name="" id="">
+            <option value=" ">카테고리 선택</option>
+            <option value="트리거고 추천 상품">트리거고 추천 상품</option>
+            <option value="새로 나온 투자">새로 나온 투자</option>
+          </select>
+          <div>
+            <img src="/src/img/img-house.png" alt="">
+          </div>
+          <input type="file" name="" id="">
+          <label for="product-name">상품명</label>
+          <input type="text" name="product-name" id="">
+          <button type="button">등록하기</button>
         </section>
       </article>
       <article class="item-list">
