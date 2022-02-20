@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/main-list.css">
+    <link rel="stylesheet" href="/src/css/main-edit.css">
+    <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/modal.css">
+    <link rel="stylesheet" href="/src/css/edit-item.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <title>Triggergo | main </title>
+</head>
+<body>
+<!-- 상단 헤더부 (네브바) -->
+<header>
+  <nav class="header">
+    <h1>Triggergo</h1>
+      <ul>
+        <li class="menu-website">
+          웹사이트 관리
+          <ul class="sub-menu">
+            <li><a href="#">메인 상품 관리</a></li>
+            <li><a href="#">메인 상품 등록</a></li>
+            <li><a href="#">중간 상품 관리</a></li>
+            <li><a href="#">중간 상품 등록</a></li>
+          </ul>
+        </li>
+        <li class="menu-items">
+          상품 관리
+          <ul lass="sub-menu">
+            <li><a href="#">목록 만들기</a></li>
+            <li><a href="#">상품 등록</a></li>
+            <li><a href="#">상품 리스트</a></li>
+            <li><a href="#">트래픽 지수</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="logout"><a href ="#">로그아웃</a></p>
+    </nav>
+  </header>
+  <!-- 메인 -->
+  <main>
+    <section class="main-item-container">
+      <article class="">
+        <section>
+          <h1>카테고리 추가 및 수정</h1>
+        </section>
+        <section>
+          <h1>중간상품 등록</h1>
+        </section>
+      </article>
+      <article class="item-list">
+          <h1>중간 상품 리스트</h1> 
+            <div class="table-window">
+              <table>
+                <thead>
+                  <th>선택</th>
+                  <th>이미지</th>
+                  <th>상품명</th>
+                  <th>키워드</th>
+                  <th></th> 
+                  <th></th> 
+                </thead> 
+                <tbody>
+                  <tr>
+                      <td>
+                        <input type="checkbox">
+                      </td>
+                      <td><img src="../img/img-house.png" alt=""></td>
+                      <td>대야미</td>
+                      <td>트리거고 추천상품</td>
+                      <td>
+                        <select name="keyword" id="keyword">
+                          <option value=" ">키워드 사용여부</option>
+                          <option value="사용">사용</option>
+                          <option value="미사용">미사용</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="order" id="order">
+                          <option value=" ">노출 순서</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                    <td><img src="../img/img-house.png" alt=""></td>
+                    <td>대야미</td>
+                    <td>트리거고 추천상품</td>
+                    <td>
+                      <select name="keyword" id="keyword">
+                        <option value=" ">키워드 사용여부</option>
+                        <option value="사용">사용</option>
+                        <option value="미사용">미사용</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="order" id="order">
+                        <option value=" ">노출 순서</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </td>
+                </tr>
+                </tbody> 
+              </table>
+            </div>
+            <nav class="navigation-table">
+              <button class="button-previous" type="button"></button>
+                <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              <button class="button-next" type="button"></button>
+            </nav>
+        </article>
+    </section> 
+  </main>
+  </div>
+  <!-- 모달창 (modal.css에서  display:none 제거 필요)-->
+  <div class="modal">
+    <div class="modal-content">
+      <p>등록되었습니다</p>
+      <button class="modal-button"
+        type="button">확인</button> 
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><a><img src="../img/icon-instagram.svg" alt="인스타그램"></a></li>
+      <li><a><img src="../img/icon-instagram.svg" alt="인스타그램"></a></li> 
+    </ul>
+    <p>Trigger Go  |  대표이사 이인석 | 고객센터 031-1234-1234<br> 
+      (평일 9:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무) 
+      사업자등록번호 111-11-11111 | 경기도 성남시 분당구 야탑로 111 | 전자우편주소 : triggergo@naver.com</p>
+  </footer>
+</body>
+</html>
