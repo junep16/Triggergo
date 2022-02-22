@@ -9,6 +9,16 @@
 .sub-item-add-container 
 .sub-category-container ul {
   width: 50%; 
+  height: 150px;
   border: 1px solid #d8d8d8;
   list-style: none;
+}
+
+.sub-item-add-container 
+.sub-category-container li {
+  width: 100%; 
+}
+.sub-item-add-container 
+.sub-category-container li:hover {
+  background-color: #ebebeb; 
 }
