@@ -7,11 +7,35 @@
   width: 50%;
 }
 .sub-item-add-container 
+.sub-category-container div { 
+  width: 100%;
+  display: flex;  
+  align-items: center; 
+  box-sizing: border-box;
+  padding: 0 20% 0 0 ;
+  height: 20px;
+  margin: 10px 0 ;
+}
+.sub-item-add-container 
+.sub-category-container input {
+  width: 300px;
+  height: 100%;
+  
+}
+.sub-item-add-container 
+.sub-category-container button {
+  height: 120%;
+  margin-left: 5px;
+
+}
+
+
+.sub-item-add-container 
 .sub-category-container ul {
-  width: 50%; 
+  width: 78%; 
   height: 150px;
   border: 1px solid #d8d8d8;
-  list-style: none;
+  list-style: none; 
 }
 
 .sub-item-add-container 
