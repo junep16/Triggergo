@@ -2,6 +2,7 @@
   display: flex;
 }
 
+/* 카테고리 추가 영역 */
 .sub-item-add-container 
 .sub-category-container {
   width: 50%;
@@ -28,8 +29,6 @@
   margin-left: 5px;
 
 }
-
-
 .sub-item-add-container 
 .sub-category-container ul {
   width: 78%; 
@@ -45,4 +44,37 @@
 .sub-item-add-container 
 .sub-category-container li:hover {
   background-color: #ebebeb; 
+}
+
+/* 중간 상품 등록 영역 */
+.sub-product-container {
+  width: 50%; 
+  padding-right: 20%;
+  box-sizing: border-box;
+}
+.sub-product-container select {
+  width: 100%;  
+  margin: 0 0 10px 0;
+}
+.sub-product-container 
+.input-sub-product-name {
+  width: 100%;   
+  margin: 10px 0;
+}
+.sub-product-container 
+.input-sub-product-name input {
+  width: 80%;   
+}
+
+.sub-product-container
+.button-add-sub-product {
+  width: 100%;
+  background-color: #656565;
+  color: #f3f3f3; 
+  border: none;
+  height: 40px; 
+}
+.sub-product-container
+.button-add-sub-product:hover {
+  opacity: 0.3;
 }
