@@ -6,35 +6,14 @@
 .sub-item-add-container 
 .sub-category-container {
   width: 50%;
-}
-.sub-item-add-container 
-.sub-category-container div { 
-  width: 100%;
-  display: flex;  
-  align-items: center; 
-  box-sizing: border-box;
-  padding: 0 20% 0 0 ;
-  height: 20px;
-  margin: 10px 0 ;
-}
-.sub-item-add-container 
-.sub-category-container input {
-  width: 300px;
-  height: 100%;
-  
-}
-.sub-item-add-container 
-.sub-category-container button {
-  height: 120%;
-  margin-left: 5px;
-
-}
+} 
 .sub-item-add-container 
 .sub-category-container ul {
-  width: 78%; 
+  width: 80%; 
   height: 150px;
   border: 1px solid #d8d8d8;
   list-style: none; 
+  margin: 10px 0 10px 0;  
 }
 
 .sub-item-add-container 
@@ -77,4 +56,24 @@
 .sub-product-container
 .button-add-sub-product:hover {
   opacity: 0.3;
+}
+
+.category-name-container, 
+.category-edit-container {
+  display: flex;
+  width: 80%; 
+}
+.category-name-container input {
+  flex: 2; 
+}
+.category-name-container button {
+  flex: 0.5;
+  margin-left: 10px;  
+}
+.category-edit-container input {
+  flex: 2; 
+}
+.category-edit-container button {
+  flex: 0.5; 
+  margin-left: 5px; 
 }
