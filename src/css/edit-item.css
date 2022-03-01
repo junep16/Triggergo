@@ -110,3 +110,11 @@
     background-color: #4A4A4A;
     color: #FFF;
 }
+
+
+/* 중간상품 상품 수정 */
+/* 카테고리 수정 */
+
+.edit-category select{
+  width: 65%; 
+}
